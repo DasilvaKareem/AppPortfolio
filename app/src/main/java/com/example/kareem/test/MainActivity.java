@@ -4,6 +4,8 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Toast;
 
 
 public class MainActivity extends ActionBarActivity {
@@ -21,7 +23,10 @@ public class MainActivity extends ActionBarActivity {
         getMenuInflater().inflate(R.menu.menu_main, menu);
         return true;
     }
-
+    public void toast1(View v) {
+        Toast toast = Toast.makeText(this, "Hello from Kareem",Toast.LENGTH_LONG);
+        toast.show();
+    }
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle action bar item clicks here. The action bar will
