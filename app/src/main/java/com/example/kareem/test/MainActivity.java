@@ -23,8 +23,9 @@ public class MainActivity extends ActionBarActivity {
         getMenuInflater().inflate(R.menu.menu_main, menu);
         return true;
     }
+    //THis will send a toast message when one of my buttons
     public void toast1(View v) {
-        Toast toast = Toast.makeText(this, "Hello from Kareem",Toast.LENGTH_LONG);
+        Toast toast = Toast.makeText(this, "Hello from Kareem, this will send me to my apps soon",Toast.LENGTH_LONG);
         toast.show();
     }
     @Override
