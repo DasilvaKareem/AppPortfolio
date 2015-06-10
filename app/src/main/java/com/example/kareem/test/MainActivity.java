@@ -25,7 +25,7 @@ public class MainActivity extends ActionBarActivity {
     }
     //THis will send a toast message when one of my buttons
     public void toast1(View v) {
-        Toast toast = Toast.makeText(this, "Hello from Kareem, this will send me to my apps soon",Toast.LENGTH_LONG);
+        Toast toast = Toast.makeText(this,R.string.toastMessage,Toast.LENGTH_LONG);
         toast.show();
     }
     @Override
